@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    padding: 15px;
+}
+
+.content {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+
+
+.title {
+    font-size: 2em; /* Large but mobile-friendly size */
+    color: cyan;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Georgia', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+
+.title:hover {
+    color: #FFD700;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.intro,
+.content-text {
+    font-size: 1em; /* Slightly smaller for mobile screens */
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #EEE;
+}
+
+.content-text {
+    text-align: justify;
+}
+
+.verse {
+    font-size: 1.2em;
+    color: #686D76;
+    text-align: center;
+    margin: 20px 0;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #686D76;
+}
+
+.blockquote {
+    font-size: 1.2em;
+    color: #686D76;
+    text-align: center;
+    margin: 20px 0;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+/* Author's name styling */
+.author {
+    font-size: 1.2em; /* Slightly smaller for mobile devices */
+    color: #c9fed1;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Georgia', serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+/* Tablet view */
+@media (min-width: 600px) {
+    .title {
+        font-size: 3em; /* Larger font size for tablets */
+    }
+
+    
+
+    .intro,
+    .content-text {
+        font-size: 1.1em; /* Slightly larger text for tablets */
+    }
+
+    .verse, .blockquote {
+        font-size: 1.3em; /* Increase size for larger screens */
+    }
+
+    .author {
+        font-size: 1.4em; /* Larger text for tablets */
+    }
+}
+
+/* Desktop view */
+@media (min-width: 1024px) {
+    .content {
+        max-width: 800px;
+    }
+
+    .title {
+        font-size: 2.5em; /* Even larger font for desktop */
+    }
+
+    .intro,
+    .content-text {
+        font-size: 1.2em; /* Slightly larger text for readability on desktops */
+    }
+
+    .verse, .blockquote {
+        font-size: 1.4em; /* Increase size for desktop */
+    }
+
+    .author {
+        font-size: 1.6em; /* Larger font for professional look */
+    }
+}
