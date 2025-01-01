@@ -80,8 +80,8 @@ body {
 
 /* Author's name styling */
 .author {
-    font-size: 1.2em; /* Slightly smaller for mobile devices */
-    color: #c9fed1;
+    font-size: 1em; /* Slightly smaller for mobile devices */
+    color: gray;
     text-align: center;
     margin-top: 20px;
     font-family: 'Georgia', serif;
